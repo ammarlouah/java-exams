@@ -1,0 +1,4 @@
+Polymorphisme : la redefinition d'une methode
+protected : variable ou methode ne peut etre invoque que par des sous classes
+surcharge : plusieurs methodes peuve avoir le meme nom mais des parametres differents
+constructeur : methode particuliaire qui est appelee au moment de la creation d'un objet,elle la le mem nom que la class et elle ne retour rien
