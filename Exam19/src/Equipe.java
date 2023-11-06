@@ -90,4 +90,76 @@ public class Equipe {
             System.out.println("Joueur"+(i+1)+" : "+eqp[i].toString());
         }
     }
+
+    public char getGr() {
+        return gr;
+    }
+
+    public void setGr(char gr) {
+        this.gr = gr;
+    }
+
+    public String getSym() {
+        return sym;
+    }
+
+    public void setSym(String sym) {
+        this.sym = sym;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public Personne getEnt() {
+        return ent;
+    }
+
+    public void setEnt(Personne ent) {
+        this.ent = ent;
+    }
+
+    public int getPts() {
+        return pts;
+    }
+
+    public void setPts(int pts) {
+        this.pts = pts;
+    }
+
+    public int getMrq() {
+        return mrq;
+    }
+
+    public void setMrq(int mrq) {
+        this.mrq = mrq;
+    }
+
+    public int getRec() {
+        return rec;
+    }
+
+    public void setRec(int rec) {
+        this.rec = rec;
+    }
+
+    public int getNbj() {
+        return nbj;
+    }
+
+    public void setNbj(int nbj) {
+        this.nbj = nbj;
+    }
+
+    public Joueur[] getEqp() {
+        return eqp;
+    }
+
+    public void setEqp(Joueur[] eqp) {
+        this.eqp = eqp;
+    }
 }
