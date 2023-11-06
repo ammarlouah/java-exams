@@ -76,17 +76,17 @@ public class Emplacement {
         minu = hor.getMinu();
 
         if(veh.getMarq()=="Moto"){
-            if(heur <= 1){
+            if((heur == 1 && minu == 0) || (heur < 1)){
                 frais = 10;
-            }else if(heur > 1 && heur <=2 && minu == 0){
+            }else if((heur > 1 || heur == 1 && minu > 0) && heur <=2 && minu == 0){
                 frais = 10+5;
             }else{
                 frais = 10+5+2;
             }
         }else{
-            if(heur <= 1){
+            if((heur == 1 && minu == 0) || (heur < 1)){
                 frais = 15;
-            }else if(heur > 1 && heur <=2 && minu == 0){
+            }else if((heur > 1 || heur == 1 && minu > 0) && heur <=2 && minu == 0){
                 frais = 15+10;
             }else{
                 frais = 15+10+5;
