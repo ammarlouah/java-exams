@@ -17,9 +17,7 @@ public class Vehicule {
 
     static String clavier(){
         Scanner clav = new Scanner(System.in);
-        String ch = clav.nextLine();
-        clav.close();
-        return ch;
+        return clav.nextLine();
     }
 
     public void lecture() throws IOException{
