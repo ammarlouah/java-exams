@@ -1,0 +1,7 @@
+interface : une sorte de classe qui ne contient que des prototypes des methodes et des constantes ayant les modificateur static et final
+
+Exception : interruption d'execution d'un programme suite a une erreur
+
+private : une variable/methode privee ne peut etre utilisee que dans les methodes de mem classe
+
+heritage : une derivee herite des proprietes d'une classe
