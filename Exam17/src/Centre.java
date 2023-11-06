@@ -64,12 +64,13 @@ public class Centre {
     }
 
     public boolean testSupp(Vehicule v){
-        int annee,mois,jours,som;
+        int annee,mois,jours,som,ref;
         jours = v.getMod()[0];
         mois = v.getMod()[1];
         annee = v.getMod()[2];
         som = jours + mois*30 + annee *365;
-        if(som > 20*365) return true;
+        ref = 21 + 11*30 + 2016*365;
+        if((ref-som) > 20*365) return true;
         return false;
     } 
 
