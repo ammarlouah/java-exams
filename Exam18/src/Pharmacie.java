@@ -52,8 +52,28 @@ public class Pharmacie {
         return som;
     }
 
+    int testMedicamentSupp(Medicament m,String cpt){
+        for(int i=0;i<m.getComp().length;i++){
+            if(m.getComp()[i].equals(cpt)) return 1;
+        }
+        return 0;
+    }
+
     Medicament[] supprime_Medicaments(String cpt){
-        return null;
+        Medicament[] supp = new Medicament[max];
+        int dim = 0;
+        for(int i=0;i<nbe-1;i++){
+            if(testMedicamentSupp(table[i], cpt) == 1){
+                supp[dim] = table[i];
+                dim++;
+                for(int j=i;j<nbe;j++){
+                    table[j] = table[j+1];
+                }
+                nbe--;
+            }
+        }
+        if(testMedicamentSupp(table[nbe-1], cpt) == 1) nbe--;
+        return supp;
     }
 
     int fichier_vehicule(String ch) throws IOException{
