@@ -11,6 +11,9 @@ public class Personne {
         this.cin = cin;
     }
 
+    public Personne(String nom2, String prenom2, String cin2, Date naissance) {
+    }
+
     static String clavier() throws IOException{
         Scanner cl = new Scanner(System.in);
         return cl.nextLine();
