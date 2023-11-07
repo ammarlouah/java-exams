@@ -15,9 +15,8 @@ public class Medicament {
     }
 
     static String clavier() throws IOException{
-        try (Scanner clav = new Scanner(System.in)) {
-            return clav.nextLine();
-        }
+        Scanner clav = new Scanner(System.in);
+        return clav.nextLine();
     }
 
     public void lecture() throws IOException{

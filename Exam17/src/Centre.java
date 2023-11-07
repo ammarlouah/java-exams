@@ -87,7 +87,7 @@ public class Centre {
                 nbe--;
             }
         }
-        if(testSupp(table[nbe])) nbe--;
+        if(testSupp(table[nbe-1])) nbe--;
         return supp;
     }
 

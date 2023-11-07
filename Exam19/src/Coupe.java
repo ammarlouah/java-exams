@@ -9,7 +9,8 @@ public class Coupe {
 
     public boolean ajouteEquipe(Equipe eq){
         if(nbe == max) return false;
-
+        table[nbe] = eq;
+        nbe++;
         return true;
     }
 

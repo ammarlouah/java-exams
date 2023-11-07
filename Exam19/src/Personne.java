@@ -2,7 +2,7 @@ import java.util.*;
 public class Personne{
     private String nom, prenom, cin, fonction;
     Date naissance;
-    Personne(String n,String p,String c,Date d,String f){
+    Personne(String n,String p,String c,Date d){
         nom=n;
         prenom=p;
         cin=c;

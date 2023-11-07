@@ -4,7 +4,7 @@ public class Personne {
     private String nom,prenom,cin;
     private int age;
 
-    Personne(String n,String p,String c){
+    Personne(String n,String p,String c,int a){
         nom = n;
         prenom = p;
         cin = c;
